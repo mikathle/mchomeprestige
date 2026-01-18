@@ -83,8 +83,34 @@ SARL – RCS Pontoise 988 751 830<br>
 </div>
 
 </section>
+<section id="realisations">
+  <h2>Avant / Après</h2>
 
-<section class="cta">
+  <div class="slider-container">
+    <img src="avant1.jpg" alt="Avant travaux">
+    <img src="apres1.jpg" class="img-after" id="after1">
+    <input type="range" min="0" max="100" value="50" class="slider"
+           oninput="document.getElementById('after1').style.width=this.value+'%'">
+  </div>
+
+  <br><br>
+
+  <div class="slider-container">
+    <img src="avant2.jpg" alt="Avant chantier">
+    <img src="apres2.jpg" class="img-after" id="after2">
+    <input type="range" min="0" max="100" value="50" class="slider"
+           oninput="document.getElementById('after2').style.width=this.value+'%'">
+  </div>
+</section>
+  <section id="galerie">
+  <h2>Galerie photos</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px">
+    <img src="galerie1.jpg" style="width:100%;border-radius:12px">
+    <img src="galerie2.jpg" style="width:100%;border-radius:12px">
+    <img src="galerie3.jpg" style="width:100%;border-radius:12px">
+    <img src="galerie4.jpg" style="width:100%;border-radius:12px">
+  </div>
+</section>  <section class="cta">
 <h2>Un projet ?</h2>
 <p>Devis gratuit – réponse rapide</p>
 <a href="tel:0621851006">📞 Appeler maintenant</a>
