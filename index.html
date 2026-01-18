@@ -5,23 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>M&C HOME PRESTIGE – Maçonnerie & Gros Œuvre à Ermont</title>
-<meta name="description" content="Entreprise de maçonnerie générale et gros œuvre à Ermont (95). Avant / Après, devis gratuit.">
+<meta name="description" content="M&C HOME PRESTIGE, entreprise de maçonnerie générale et gros œuvre à Ermont (95). Avant / Après, devis gratuit.">
 
 <style>
 body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#e5e7eb}
-header{padding:80px 20px;text-align:center;background:#000}
-header h1{color:#d4af37;font-size:46px;margin:0}
-nav{text-align:center;padding:15px;border-bottom:1px solid #d4af37}
+header{padding:90px 20px;text-align:center;background:linear-gradient(135deg,#000,#1a1a1a)}
+header h1{color:#d4af37;font-size:48px;margin-bottom:10px}
+header p{font-size:20px}
+
+nav{background:#000;border-bottom:1px solid #d4af37;padding:15px;text-align:center}
 nav a{color:#d4af37;margin:0 15px;text-decoration:none;font-weight:bold}
-section{max-width:1100px;margin:auto;padding:60px 20px}
-h2{color:#d4af37}
-.slider{max-width:800px;margin:auto;position:relative;border:1px solid #d4af37;border-radius:14px;overflow:hidden}
+
+section{max-width:1100px;margin:auto;padding:70px 20px}
+h2{color:#d4af37;font-size:32px;margin-bottom:25px}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#111;border:1px solid #d4af37;border-radius:14px;padding:25px}
+
+.slider{max-width:800px;margin:auto;position:relative;border:1px solid #d4af37;border-radius:16px;overflow:hidden}
 .slider img{width:100%;display:block}
 .after{position:absolute;top:0;left:0}
 .range{width:100%}
+
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
 .gallery img{width:100%;border-radius:12px}
-footer{text-align:center;padding:30px;color:#aaa}
+
+.cta{text-align:center;background:#111;border-top:1px solid #d4af37;border-bottom:1px solid #d4af37}
+.cta a{background:#d4af37;color:#000;padding:16px 34px;border-radius:30px;text-decoration:none;font-weight:bold}
+
+footer{text-align:center;background:#000;color:#9ca3af;padding:40px}
 </style>
 </head>
 
@@ -29,20 +41,44 @@ footer{text-align:center;padding:30px;color:#aaa}
 
 <header>
 <h1>M&C HOME PRESTIGE</h1>
-<p>Maçonnerie générale & gros œuvre</p>
+<p>Maçonnerie générale & gros œuvre haut de gamme</p>
 </header>
 
 <nav>
+<a href="#about">À propos</a>
+<a href="#services">Services</a>
 <a href="#avant">Avant / Après</a>
 <a href="#galerie">Galerie</a>
-<a href="tel:0621851006">📞 Appeler</a>
+<a href="#contact">Contact</a>
+<a href="tel:0621851006" style="background:#d4af37;color:#000;padding:10px 18px;border-radius:30px">📞 Appeler</a>
 </nav>
+
+<section id="about">
+<h2>Qui sommes-nous</h2>
+<p>
+<strong>M&C HOME PRESTIGE</strong> est une entreprise spécialisée en maçonnerie générale et gros œuvre.
+Nous intervenons à Ermont, dans le Val-d’Oise et toute l’Île-de-France.
+</p>
+<p>
+SARL – RCS Pontoise 988 751 830<br>
+21B rue des Faillette, 95120 Ermont
+</p>
+</section>
+
+<section id="services">
+<h2>Nos services</h2>
+<div class="services">
+<div class="card">🧱 Maçonnerie générale</div>
+<div class="card">🏗️ Gros œuvre</div>
+<div class="card">🔧 Rénovation</div>
+</div>
+</section>
 
 <section id="avant">
 <h2>Avant / Après</h2>
 
 <div class="slider">
-<img src="avant1.jpg">
+<img src="avant1.jpg" alt="Avant travaux">
 <img src="apres1.jpg" class="after" id="a1">
 <input type="range" min="0" max="100" value="50" class="range"
 oninput="a1.style.width=this.value+'%'">
@@ -51,7 +87,7 @@ oninput="a1.style.width=this.value+'%'">
 <br><br>
 
 <div class="slider">
-<img src="avant2.jpg">
+<img src="avant2.jpg" alt="Avant chantier">
 <img src="apres2.jpg" class="after" id="a2">
 <input type="range" min="0" max="100" value="50" class="range"
 oninput="a2.style.width=this.value+'%'">
@@ -68,9 +104,17 @@ oninput="a2.style.width=this.value+'%'">
 </div>
 </section>
 
-<footer>
-<p>© M&C HOME PRESTIGE – Ermont (95)</p>
-</footer>
+<section class="cta">
+<h2>Un projet ?</h2>
+<p>Devis gratuit – réponse rapide</p>
+<a href="tel:0621851006">📞 Appeler maintenant</a>
+</section>
 
-</body>
-</html>
+<section id="contact">
+<h2>Contact</h2>
+<p>
+📍 21B rue des Faillette, 95120 Ermont<br>
+📞 06 21 85 10 06<br>
+📧 mikathle@yahoo.fr
+</p>
+</section>
