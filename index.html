@@ -69,13 +69,46 @@
 </section>
 
 <section id="gallery">
-  <h2>Nos réalisations</h2>
-  <div class="services">
-    <div class="card"><img src="photo1.jpg" alt="Travaux de maçonnerie" style="width:100%;border-radius:12px"></div>
-    <div class="card"><img src="photo2.jpg" alt="Chantier gros œuvre" style="width:100%;border-radius:12px"></div>
-    <div class="card"><img src="photo3.jpg" alt="Rénovation bâtiment" style="width:100%;border-radius:12px"></div>
+  <h2>Nos réalisations – Avant / Après</h2>
+
+  <div class="before-after">
+    <h3>Rénovation – Gros œuvre</h3>
+    <div class="slider-container">
+      <img src="avant1.jpg" alt="Avant travaux" class="img-before">
+      <img src="apres1.jpg" alt="Après travaux" class="img-after">
+      <input type="range" min="0" max="100" value="50" class="slider">
+    </div>
+  </div>
+
+  <div class="before-after">
+    <h3>Maçonnerie – Extension</h3>
+    <div class="slider-container">
+      <img src="avant2.jpg" alt="Avant chantier" class="img-before">
+      <img src="apres2.jpg" alt="Après chantier" class="img-after">
+      <input type="range" min="0" max="100" value="50" class="slider">
+    </div>
   </div>
 </section>
+
+<style>
+.before-after { margin-bottom:60px; }
+.slider-container { position:relative; max-width:800px; margin:auto; border-radius:16px; overflow:hidden; border:1px solid #d4af37; }
+.slider-container img { width:100%; display:block; position:absolute; top:0; left:0; }
+.img-before { position:relative; }
+.img-after { clip-path: inset(0 50% 0 0); }
+.slider { width:100%; position:relative; z-index:2; margin-top:420px; }
+</style>
+
+<script>
+const sliders = document.querySelectorAll('.slider');
+sliders.forEach(slider => {
+  slider.addEventListener('input', e => {
+    const container = e.target.parentElement;
+    const afterImg = container.querySelector('.img-after');
+    afterImg.style.clipPath = `inset(0 ${100 - e.target.value}% 0 0)`;
+  });
+});
+</script>
 
 <section class="cta">
   <h2>Parlons de votre projet</h2>
